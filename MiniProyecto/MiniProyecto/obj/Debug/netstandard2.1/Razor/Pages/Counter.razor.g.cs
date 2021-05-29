@@ -72,6 +72,13 @@ using MiniProyecto.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\_Imports.razor"
+using MiniProyecto.Components.BlazorPages;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {

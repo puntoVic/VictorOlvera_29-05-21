@@ -75,6 +75,13 @@ using MiniProyecto.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\_Imports.razor"
+using MiniProyecto.Components.BlazorPages;
+
+#line default
+#line hidden
+#nullable disable
     public partial class SurveyPrompt : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

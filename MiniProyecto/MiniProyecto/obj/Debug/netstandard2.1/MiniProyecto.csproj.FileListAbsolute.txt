@@ -176,7 +176,6 @@ D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\Raz
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\Razor\Shared\SurveyPrompt.razor.g.cs
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\blazor\unlinked.output
-D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\0KPGnm5udOxxNzjKYRLgMd89NzW7UF6eS5sJQfwg8x4=.hash
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\99dseBOagY3mzu5Y8Eqm8gRI_o8QbbCp7R2Ew9bQ_5E=.hash
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash
@@ -228,13 +227,11 @@ D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\int
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\rvTW0d54uLW0iDMAX30lpmr9f8uHoS3YYkEU5zNGhyc=.hash
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash
-D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\CjbjD37WwEsmOAuzSfcGgoYF0T47JAEW6HKEIe09PP4=.hash
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\SPHS1EAPAcMFN4TEIUYl3FWtoCQTsNJch0XVGgok1eE=.hash
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\blazor\blazor.boot.json
-D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\j92DvXiAj66UdlxvFL2bLzU3HmTnNmvoidrSa9K_BGo=.hash
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\compressed\_framework\_bin\MiniProyecto.dll.gz
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Net.Http.Json.dll.gz
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Buffers.dll.gz
@@ -358,3 +355,8 @@ D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\Min
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\MiniProyecto.csproj.CopyComplete
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\MiniProyecto.dll
 D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\MiniProyecto.pdb
+D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\RazorDeclaration\Components\BlazorPages\Albums.razor.g.cs
+D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\Razor\Components\BlazorPages\Albums.razor.g.cs
+D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\RU-jROlmAaSUic8Y2STwvfh4EJdtq5w57ULPu0PNvxI=.hash
+D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\IrGHBYEmu0IcbFXwHihPjtIZQGO4G9PAmyU7HBOY6o0=.hash
+D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\obj\Debug\netstandard2.1\integrity\T1H3C7zbcbQzBPFfzDwZy__QYevPVSRipWO-ivBmSWg=.hash
