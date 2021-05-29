@@ -1,0 +1,78 @@
+﻿
+@inject HttpClient Http
+@using Entities
+<h3>Album</h3>
+@if (album == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Id</th>
+                <th>Titulo</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>@album.userId.ToString()</td>
+                <td>@album.id.ToString()</td>
+                <td>@album.title</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+}
+@if (album == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+
+        <tbody>
+            
+            @foreach (var photo in photos)
+            {
+              
+                <tr>
+                    <td><img src="@photo.thumbnailUrl" /></td>
+                    <td>Comments</td>
+                </tr>
+               
+
+            }
+
+        </tbody>
+    </table>
+}
+
+
+
+
+@code {
+    [Parameter]
+    public int IdAlbum { get; set; }
+
+
+
+    private List<Album> albums;
+    private Album album;
+    private List<Photo> photos;
+    protected override async Task OnInitializedAsync()
+    {
+        albums = await Http.GetFromJsonAsync<List<Album>>("https://jsonplaceholder.typicode.com/albums");
+        photos = await Http.GetFromJsonAsync<List<Photo>>("https://jsonplaceholder.typicode.com/photos");
+        album = albums.Where(x => x.id == IdAlbum).First();
+        photos = photos.Where(x => x.albumId == IdAlbum).ToList();
+    }
+
+
+}

@@ -82,13 +82,42 @@ using MiniProyecto.Components.BlazorPages;
 #line default
 #line hidden
 #nullable disable
-    public partial class Albums : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 3 "D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\Components\BlazorPages\Album.razor"
+using Entities;
+
+#line default
+#line hidden
+#nullable disable
+    public partial class Album : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 10 "D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\Components\BlazorPages\Album.razor"
+       
+    [Parameter]
+    public int IdAlbum { get; set; }
+    private List<Album> albums;
+    private Album album;
+    private List<Photo> photos;
+    protected override async Task OnInitializedAsync()
+    {
+        albums = await Http.GetFromJsonAsync<List<Album>>("https://jsonplaceholder.typicode.com/albums");
+        photos = await Http.GetFromJsonAsync<List<Photo>>("https://jsonplaceholder.typicode.com/photos");
+        album = albums.Where(x => x.IdAlbum == IdAlbum).First();
+        photos = photos.Where(x => x.albumId == IdAlbum).ToList();
+    }
+
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

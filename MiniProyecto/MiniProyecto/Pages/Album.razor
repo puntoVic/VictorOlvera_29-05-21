@@ -1,0 +1,14 @@
+﻿
+@page  "/Album/{IdAlbum}"
+
+<AlbumComponent IdAlbum=@id />
+@code {
+    [Parameter]
+    public string IdAlbum { get; set; }
+    private int id;
+    protected override async Task OnInitializedAsync()
+    {
+        IdAlbum = IdAlbum;
+        id = Int32.Parse(IdAlbum);
+    }
+}

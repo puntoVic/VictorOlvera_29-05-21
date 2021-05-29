@@ -1,0 +1,40 @@
+﻿@inject HttpClient Http
+@using Entities
+<h3>Albums</h3>
+@if (albums == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Id</th>
+                <th>Titulo</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var album in albums)
+            {
+            <tr>
+                <td>@album.userId.ToString()</td>
+                <td>@album.id.ToString()</td>
+                <td>@album.title</td>
+                <td><a href="album/@album.id">Ver</a></td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+@code {
+    private Album[] albums;
+    protected override async Task OnInitializedAsync()
+    {
+        albums = await Http.GetFromJsonAsync<Album[]>("https://jsonplaceholder.typicode.com/albums");
+    }
+
+}
