@@ -83,7 +83,7 @@ using MiniProyecto.Components.BlazorPages;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\Components\BlazorPages\AlbumComponent.razor"
+#line 2 "D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\Components\BlazorPages\AlbumComponent.razor"
 using Entities;
 
 #line default
@@ -97,24 +97,37 @@ using Entities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 60 "D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\Components\BlazorPages\AlbumComponent.razor"
+#line 70 "D:\Proyectos\MiniProyecto\MiniProyecto\MiniProyecto\Components\BlazorPages\AlbumComponent.razor"
        
     [Parameter]
     public int IdAlbum { get; set; }
 
 
-
+    private string commentsText = String.Empty;
     private List<Album> albums;
     private Album album;
     private List<Photo> photos;
+    private List<Comment> comments;
     protected override async Task OnInitializedAsync()
     {
         albums = await Http.GetFromJsonAsync<List<Album>>("https://jsonplaceholder.typicode.com/albums");
         photos = await Http.GetFromJsonAsync<List<Photo>>("https://jsonplaceholder.typicode.com/photos");
+
         album = albums.Where(x => x.id == IdAlbum).First();
         photos = photos.Where(x => x.albumId == IdAlbum).ToList();
     }
+    async Task LoadComments(int id)
+    {
+        commentsText = String.Empty;
+        comments = await Http.GetFromJsonAsync<List<Comment>>("https://jsonplaceholder.typicode.com/comments");
+        comments = comments.Where(x => x.postId == id).ToList();
+        foreach (var comment in comments)
+        {
+            commentsText = String.Concat(commentsText, comment.body.ToString(), "\n\n\n");
 
+        }
+
+    }
 
 
 #line default
